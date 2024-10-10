@@ -35,7 +35,6 @@ import { copy } from 'esbuild-plugin-cp';
   const res = await build({
     entryPoints: ['./src/main.ts'],
     bundle: true,
-    watch: true,
     outfile: './dist/main.js',
     plugins: [
       copy({
@@ -68,7 +67,6 @@ import { build } from 'esbuild';
     bundle: true,
     // as resolveFrom not set, we use dist as output base dir
     outfile: './dist/main.js',
-    watch: true,
     plugins: [
       copy({
         assets: [
@@ -123,7 +121,6 @@ No files matched using current glob pattern: ./node_modules/tinymce/skins/*, may
 
 ```typescript
 import type { GlobbyOptions } from 'globby';
-import type { WatchOptions } from 'chokidar';
 
 export type MaybeArray<T> = T | T[];
 
