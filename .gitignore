@@ -1,4 +1,6 @@
 node_modules/
 dist/
+coverage/
+esbuild-plugin-cp*.tgz
 .TODO
 issues
