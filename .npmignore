@@ -1,3 +1,12 @@
-src
-tests
-issues
+coverage/
+node_modules/
+src/
+tests/
+.gitignore
+.npmignore
+.npmrc
+esbuild-plugin-cp*.tgz
+package-lock.json
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
