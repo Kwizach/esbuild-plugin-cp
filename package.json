@@ -1,0 +1,54 @@
+{
+  "name": "esbuild-plugin-cp",
+  "version": "1.0.0",
+  "description": "ESBuild plugin for assets copy.",
+  "keywords": [
+    "esbuild",
+    "ESBuild",
+    "copy",
+    "plugin"
+  ],
+  "homepage": "https://github.com/Kwizach/esbuild-plugin-cp/#readme",
+  "changelog": "https://github.com/Kwizach/esbuild-plugin-cp/CHANGELOG.md",
+  "bugs": {
+    "url": "https://github.com/Kwizach/esbuild-plugin-cp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwizach/esbuild-plugin-cp.git"
+  },
+  "license": "MIT",
+  "author": "Kwizach <kwiz4ch@gmail.com> (https://github.com/Kwizach)",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --dts --format esm",
+    "build": "rm -rf dist && tsup src/index.ts --config tsup.config.ts",
+    "test": "vitest"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "globby": "^14.0.2"
+  },
+  "peerDependencies": {
+    "esbuild": ">= 0.14.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.7.26",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.7.5",
+    "esbuild": "^0.24.0",
+    "tmp": "^0.2.3",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  }
+}
