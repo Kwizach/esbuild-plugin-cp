@@ -9,7 +9,7 @@ watch has been removed. exclude has been added.
 
 - [Author](https://github.com/Kwizach)
 - [GitHub Repo](https://github.com/Kwizach/esbuild-plugin-cp#readme)
-- [Changelog](https://github.com/Kwizach/esbuild-plugin-cp/CHANGELOG.md)
+- [Changelog](https://github.com/Kwizach/esbuild-plugin-cp#CHANGELOG.md)
 
 ## Features
 
@@ -45,7 +45,10 @@ import { copy } from 'esbuild-plugin-cp';
         assets: {
           from: ['./assets/*'],
           to: ['./assets', './tmp-assets'],
-          exclude: ['.assets/*.txt']
+          exclude: [
+            '.assets/*.txt',    // exclude all .txt files from assets 
+            '.assets/**/*.js'   // exclude all .js files from assets and his sub directories
+          ]
         },
       }),
     ],
