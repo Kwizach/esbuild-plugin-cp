@@ -113,10 +113,7 @@ Note: This plugin doesnot expand directories by default, which means when you're
 If you're using `dir/*` and there are no files under this directory, you will got an warning:
 
 ```bash
-i No files matched using current glob pattern: ./node_modules/tinymce/skins/*, maybe you need to configure globby by options.globbyOptions?
-```
-
-
+No files matched using current glob pattern: ./node_modules/tinymce/skins/*, maybe you need to configure globby by options.globbyOptions?
 ```
 
 ## Configurations
